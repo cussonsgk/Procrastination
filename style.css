@@ -3,5 +3,8 @@ body {
   background: #efb0a1;
   text-align: center;
 }
-
-
+header{
+  background-color: #797d81;
+  color: white;
+  padding: 20px;
+}
