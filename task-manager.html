@@ -1,1 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-Manager:Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="tm">
+      <h1>Add a New Task</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="task-manager.html">Add Task</a>
+        <a href="progress.html">Progress</a>
+      </nav>
+    </header>
 
+    <main>
+      <section id="container">
+        <form id="taskform">
+          <label>Task Name</label>
+          <input type="text" id="taskname" required />
+
+          <label>Priority</label>
+          <select id="priority">
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+          </select>
+
+          <label>Deadline</label>
+          <input type="date" id="deadline" required />
+
+          <button type="submit">Save Task</button>
+
+          <p id="error"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="tm.js"></script>
+  </body>
+</html>
